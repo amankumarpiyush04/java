@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class statements {
+    public static void main (String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("enter the income : ");
+        int income = input.nextInt();
+        if(income <100000)
+            System.out.println("not taxable");
+        else if (income < 350000)
+            System.out.println("tax payble 3%");
+        else if (income <500000)
+            System.out.println("tax is 12%^");
+        else
+            System.out.println("tax is 20%");
+
+        input.close();
+    }
+}
+       
