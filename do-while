@@ -1,0 +1,14 @@
+//  import java.util.Scanner;
+public class loop {
+    public static void main(String[] args){
+//        System.out.println("Enter how many times : ");
+        // Scanner input = new Scanner (System.in);
+        // int num = input.nextInt();
+        int i = 0;
+do {
+  System.out.println(i);
+  i++;
+}
+while (i < 5);
+}
+}
