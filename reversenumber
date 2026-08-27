@@ -1,0 +1,17 @@
+public class ReverseNumber {
+    public static void main(String[] args) {
+        int number = 987654;
+        int reversedNumber = 0;
+        
+        System.out.println("Original Number: " + number);
+        
+        // The loop continues as long as the number is not 0
+        while(number != 0) {
+            int remainder = number % 10;
+            reversedNumber = reversedNumber * 10 + remainder;
+            number = number / 10;
+        }
+        
+        System.out.println("Reversed Number: " + reversedNumber);
+    }
+}
