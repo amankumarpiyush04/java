@@ -1,0 +1,15 @@
+public class FactorialRecursion {
+    public static void main(String[] args) {
+        int number = 6;
+        long result = calculateFactorial(number);
+        System.out.println("Factorial of " + number + " is " + result);
+    }
+
+    public static long calculateFactorial(int n) {
+        if (n >= 1) {
+            return n * calculateFactorial(n - 1);
+        } else {
+            return 1;
+        }
+    }
+}
