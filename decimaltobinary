@@ -1,0 +1,19 @@
+public class DecimalToBinary {
+    public static void main(String[] args) {
+        int decimalNumber = 156;
+        StringBuilder binary = new StringBuilder();
+
+        if (decimalNumber == 0) {
+            System.out.println("Binary: 0");
+            return;
+        }
+
+        while (decimalNumber > 0) {
+            int remainder = decimalNumber % 2;
+            binary.append(remainder);
+            decimalNumber /= 2;
+        }
+
+        System.out.println("Binary: " + binary.reverse().toString());
+    }
+}
